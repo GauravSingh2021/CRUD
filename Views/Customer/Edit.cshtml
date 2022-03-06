@@ -1,0 +1,42 @@
+﻿@model CRUDOperations.Models.Customer
+@{ 
+}
+
+<div class="row">
+    <div class="col-6 offset-3">
+                <form asp-action="Edit" asp-controller="Customer" method="post">
+
+                    <div class="form-group">
+                        <input type="hidden" asp-for="Id"/>
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Mobile"></label>
+                        <input asp-for="Mobile" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Salary"></label>
+                        <input asp-for="Salary" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="City"></label>
+                        <input asp-for="City" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Update</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+   
